@@ -1,0 +1,15 @@
+html {
+    background: rgb(142, 59, 59);
+    max-height: 500px;    
+    max-width: 100%;
+}
+
+#randomDiv {
+    max-height: 500px;    
+    max-width: 100%;
+    margin: 10% auto 10% auto;    
+}
+#randomImg {
+    max-height: 500px;    
+    max-width: 100%;
+}
