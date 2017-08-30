@@ -4,6 +4,11 @@ html {
     max-width: 100%;
 }
 
+#newRandomImage{
+    max-height: 500px;    
+    max-width: 100%;
+    margin: 10% auto 10% auto;  
+}
 #randomDiv {
     max-height: 500px;    
     max-width: 100%;

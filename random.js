@@ -12,7 +12,31 @@ console.log(arrowArray);
 
 let arrowSign = document.getElementById("randomDiv");
 let pageBody = document.getElementById("wholeBody");
+let clickArrow = document.getElementById("newRandomImage")
 
+// **********************click RANDOM ARROW*****************************
+
+// ****************
+// Code block's objective?
+// ***
+// Why does it work?
+// ***
+// ****************
+
+pageBody.addEventListener("click", loadNewArrow);
+
+function loadNewArrow(event){
+    
+    let newRandomPic = arrowArray[Math.floor(Math.random()*7 +1)];
+        console.log("newRandomPic: ", newRandomPic);
+
+    let newCard = `
+        <div id="randomDiv">
+            <img id="newRandomImage" src=${newRandomPic.image}>
+        </div>
+        `            
+        clickArrow.innerHTML = newCard;   
+}
 
 // **********************onload RANDOM ARROW*****************************
 // ****************
@@ -36,18 +60,3 @@ function loadArrow(event){
     `            
     arrowSign.innerHTML += card;   
 }
-
-
-
-
-// **********************click RANDOM ARROW*****************************
-
-
-
-// pageBody.addEventListener("click", arrowsFunction);
-
-// function arrowsFunction(event){
-//     arraowArray.Math.floor((Math.random() * 9) + 1);
-
-// }
-
